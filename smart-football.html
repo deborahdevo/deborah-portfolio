@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Football | Project Showcase</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo">Deborah.dev</a>
+            <ul class="nav-links">
+                <li><a href="index.html">← Back to Portfolio</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Project Detail Header -->
+    <section class="project-detail-hero">
+        <div class="container">
+            <span class="status-badge finished">Finished • Dissertation Project</span>
+            <h1>Smart Football</h1>
+            <p>A full-stack Django web application engineered to balance recreational football teams using data-driven algorithms and skill metrics.</p>
+            <div class="project-links" style="margin-top: 1.5rem;">
+                <a href="https://github.com/opeowolabi03/smart-football" target="_blank" class="btn primary">View GitHub Repository</a>
+                <a href="#dissertation" class="btn secondary">Read Dissertation PDF</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Overview & Details -->
+    <section class="container" style="padding: 4rem 2rem;">
+        <div class="about-grid" style="margin-bottom: 3rem;">
+            <div class="about-text">
+                <h3>Project Overview</h3>
+                <p>Smart Football was developed as my final-year BSc Computer Science dissertation project at the University of Derby, achieving a 75% First-Class grade. The application addresses the common problem of unevenly matched recreational football matches by calculating player metrics and automatically distributing teams equitably.</p>
+                <p>Built using Python, Django and SQLite, the platform manages user profiles, performance statistics and algorithmic team generation seamlessly.</p>
+            </div>
+            <div class="quick-facts">
+                <h3>Tech Stack & Specs</h3>
+                <ul>
+                    <li>🐍 Python & Django Framework</li>
+                    <li>🗄️ SQLite Database</li>
+                    <li>📊 Algorithmic Team Balancing Logic</li>
+                    <li>🏆 Grade: 75% (First-Class)</li>
+                </ul>
+            </div>
+        </div>
+<!-- Screenshot Gallery Section -->
+        <h3 style="margin-bottom: 1.5rem; font-size: 1.5rem; color: #111827;">Application Screenshots</h3>
+        <p style="color: #4b5563; margin-bottom: 1.5rem;">Click any image to view it full screen.</p>
+        <div class="screenshot-grid">
+            
+            <div class="screenshot-card" onclick="openModal(this)">
+                <img src="images/player-dashboard.png" alt="Player Dashboard">
+                <p><strong>Player Dashboard:</strong> Overview of active sessions, attendance rates and individual profile metrics.</p>
+            </div>
+
+            <div class="screenshot-card" onclick="openModal(this)">
+                <img src="images/organiser-dashboard.png" alt="Organiser Dashboard">
+                <p><strong>Organiser Dashboard:</strong> Match management controls, attendance analytics and session status charts.</p>
+            </div>
+
+            <div class="screenshot-card" onclick="openModal(this)">
+                <img src="images/login-page.png" alt="Login and Signup Page">
+                <p><strong>Authentication:</strong> Secure login and registration portal for community players and organisers.</p>
+            </div>
+
+            <div class="screenshot-card" onclick="openModal(this)">
+                <img src="images/team-allocation.png" alt="Team Allocation Page">
+                <p><strong>Team Allocation:</strong> Automated algorithmic balancing based on skill, position, fitness and ratings.</p>
+            </div>
+
+            <div class="screenshot-card" onclick="openModal(this)">
+                <img src="images/all-sessions.png" alt="All Sessions Page">
+                <p><strong>All Sessions:</strong> Search, filter and browse available community football matches.</p>
+            </div>
+
+            <div class="screenshot-card" onclick="openModal(this)">
+                <img src="images/match-details.png" alt="Match Details Page">
+                <p><strong>Match Details:</strong> Detailed participant lists and generated team rosters for specific fixtures.</p>
+            </div>
+
+            <div class="screenshot-card" onclick="openModal(this)">
+                <img src="images/attendance-management.png" alt="Attendance Management Page">
+                <p><strong>Attendance Management:</strong> Interface for tracking player attendance status post-match.</p>
+            </div>
+
+            <div class="screenshot-card" onclick="openModal(this)">
+                <img src="images/match-results.png" alt="Match Results Page">
+                <p><strong>Match Results:</strong> Post-match summaries, goal statistics, MVP tracking and fairness scores.</p>
+            </div>
+
+        </div>
+
+        <!-- Full-Screen Modal Viewer -->
+        <div id="imageModal" class="modal" onclick="closeModal()">
+            <span class="close-modal">&times;</span>
+            <img class="modal-content" id="modalImg">
+        </div>
+
+        <!-- Dissertation PDF Section -->
+        <div id="dissertation" class="dissertation-box" style="margin-top: 4rem; background: #ffffff; padding: 2.5rem; border-radius: 8px; border: 1px solid #e5e7eb; text-align: center;">
+            <h3 style="margin-bottom: 1rem; color: #111827;">Final-Year Dissertation Document</h3>
+            <p style="color: #4b5563; margin-bottom: 1.5rem;">Read the complete academic documentation, architecture design and evaluation metrics for Smart Football.</p>
+            <a href="smart-football-dissertation.pdf" target="_blank" class="btn primary">Download Dissertation (PDF)</a>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Deborah.</p>
+    </footer>
+
+</body>
+</html>
